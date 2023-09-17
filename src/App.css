@@ -5,3 +5,40 @@
     list-style: none;
     text-decoration: none;
  }
+
+ .App {
+   text-align: center;
+   margin: 10px auto;
+ }
+
+ .input_section {
+   margin: 16px 24px;
+ }
+
+.section_ttl {
+   display: inline-block;
+}
+.section_list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 8px;
+}
+
+.section_item {
+   width: 10%;
+   border: 1px dotted black;
+   box-shadow: 4px 4px 1px rgba(48, 48, 48, 0.634);
+   transition: box-shadow .25s;
+}
+
+.section_item:hover {
+   box-shadow: none;
+}
+
+.search_section {
+   margin: 16px 24px;
+}
+
+
+

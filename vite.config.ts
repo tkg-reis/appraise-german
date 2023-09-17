@@ -1,18 +1,20 @@
 import { defineConfig } from 'vite'
-import { VitePluginNode } from 'vite-plugin-node'
 import react from '@vitejs/plugin-react'
+import { VitePluginNode  } from 'vite-plugin-node'; 
 
 // https://vitejs.dev/config/
 export default defineConfig({
-
-  server: {
-    port: 3000,
-  },
   plugins: [
     react(),
-    ...VitePluginNode({
-      adapter: 'express',
-      appPath: './backend/server/server.ts',
-    }),
   ],
-})
+  // server: {
+  //   port: 5173,
+  // },
+  // plugins: [
+  //   react(),
+  //   ...VitePluginNode({
+  //     adapter: 'express',
+  //     appPath: './backend/server/server.ts',
+  //   }),
+  // ],
+});
